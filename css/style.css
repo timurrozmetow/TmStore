@@ -7,8 +7,12 @@
     text-decoration: none;
 }
 @font-face {
-    font-family:Inter ;
-    src: url(../fonts/Inter-Regular.ttf);
+    font-family: 'interregular';
+    src: url('../fonts/inter-regular-webfont.woff2') format('woff2'),
+         url('../fonts/inter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Class */
@@ -170,7 +174,7 @@ header ul li a{
 }
 .icons{
     padding: 0 5% 0 0;
-    /* margin: 0 25% 0 0; */
+    
     height: 30px;
 }
 .IconsSearch{
@@ -178,14 +182,13 @@ header ul li a{
 }
 /* main */
 main{
-    /* height: 90vh; */
     display: flex;
     background-color:#DCE5E2;
     border-radius: 25px;
     padding: 8% 0 0;
 }
 .main_title{
-    /* max-height: 200px; */
+    
     font-size: 58px;
     line-height: 1;
     font-weight: 400;
@@ -193,14 +196,10 @@ main{
 }
 .main_text{
     font-size: 16px;
-    /* height: 7%; */
-    /* width:  82%; */
     margin: 10% 0 5% 0 ;
     padding: 0 0 0 10% ;
 }
 .main_btn{
-    /* height: 12%; */
-    /* width: 30%; */
     font-size: 18px;
     margin: 1% 0px 0 9% ;
     border: 1px solid black;
@@ -210,7 +209,6 @@ main{
     padding: 3%;
 }
 .MainPhoto{
-    /* height: 100%; */
     width: 100%;
 }
 
@@ -252,7 +250,6 @@ main{
     padding:  0 2% 0 0 ;
 }
 .Main_Text_Right p:nth-child(1){
-    /* font-weight: 600; */
     line-height: 19px;
 }
 .Main_Text_Right p:nth-child(2){
@@ -272,10 +269,7 @@ main{
     width: 100%;
     padding-left: 2%;
 }
-.RightCollage1{
-    /* margin-bottom: 5%; */
 
-}
 .RightImage1, .RightImage2{
     height: 100%;
     width: 100%;
@@ -296,12 +290,10 @@ main{
     margin-right: 5%;
 }
 .LeftImage1, .LeftImage2{
-    /* padding: 20% 0 0 0; */
     width: 100%;
 }
 .Left_Main_Text{
     text-align: center;
-    /* padding: 20% 0 0 0; */
 }
 .Left_Main_Text p:nth-child(1){
     font-size: 20px;
@@ -317,21 +309,15 @@ main{
 /* Set */
 
 .Set{
-    /* padding: 2%; */
     display: flex;
-    /* height: 70vh; */
-    /* width: 100%; */
 }
 .SetUsual{
-    /* width: 24%; */
     margin-right: 2%;
     transition: ease 0.4s;
 }
 .SetArea{
     width: 100%;
     padding: 5%;
-    /* height: 37%; */
-    /* padding: 0 0 0 6% ;  */
 }
 .SetImg{
     display: block;
@@ -343,7 +329,6 @@ main{
 }
 .SetTitle{
     margin: 5% 0;
-    /* margin-bottom: 4%; */
 }
 .SetPrice{
     margin: 10% 0;
@@ -362,40 +347,28 @@ main{
 .Grid{
     display: flex;
     justify-content: space-between;
-    /* height: 70vh; */
     width: 100%;
-    /* padding: 1%; */
 }
 .GridSpaceSample{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* margin-right:1%; */
-    /* height: 100%; */
     width: 28%;
     border-radius: 16px;
     background-color: #F8F9FA;
     text-align: center;
-    /* padding: 0 0 2%; */
     transition: ease 0.4s;
     min-height: 50vh;
 }
-/* .GridSpace1{} */
-/* .GridSpace2{} */
 .GridSpace3{margin: 0;}
 
 .GridArea{
-    /* padding-top: 10%; */
     padding: 6% 0;
 }
 .GridText{
     font-size: 28px;
 }
 .GridImg{
-    /* display: block; */
-    /* padding: 0 0 0 0 ; */
     width: 80%;
-    /* height: 50%; */
     display: block;
       margin: 4% auto;
 }
@@ -405,7 +378,6 @@ main{
 
 .GridBtn{
     width: 50%;
-    /* height: 50%; */
     display: block;
     margin: 4% auto;
     border:1px solid black;
@@ -414,15 +386,12 @@ main{
 .Place{
     display: flex;
     align-items: center;
-    /* height: 75vh; */
-    /* padding: 2%; */
     margin-bottom: 5%;
 }
 .PhotoBook{
     width: 100%;
 }
 .PlaceText{
-    /* height: 80%; */
     padding:0 2%;
 }
 .PlaceText p{
@@ -436,7 +405,6 @@ main{
 .TextAreaCenter{
     display: flex;
     justify-content: center;
-    /* text-align: center; */
 }
 .TextCenter{
     font-size: 15px;
@@ -447,9 +415,7 @@ main{
 }
 /* search */
 .Search{
-    /* padding-top: 2%; */
     margin: 4% 0 5%;
-    /* height: 40vh; */
     width: 100%;
     text-align: center;
 }
@@ -503,14 +469,9 @@ main{
 .Gmail{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items:center;
-    /* height: 75vh; */
-    /* width: 78%; */
     background-color: #DCE5E2;
     border-radius:16px;
-    /* margin: 0 auto 0 auto; */
-    /* padding:0 0 5%; */
     padding: 4% 0;
 }
 .m0{
@@ -521,7 +482,6 @@ main{
 }
 .GmailImg{
     width: 30%;
-    /* margin: 0 0 1% 0; */
 }
 .Gmail_input{
     width: 50%;
@@ -535,8 +495,6 @@ main{
 footer{
     display: flex;
     justify-content: space-between;
-    /* padding:0 5%; */
-    /* width: 100%; */
     background-color:#C5C5C5;
     padding: 2% 5%;
 }
@@ -546,13 +504,11 @@ footer{
 }
 .Footer_Text{
     width: 70%;
-    /* height: 80%; */
     font-size: 20px;
 }
 .list_of_footer{
     margin-left: 8%;
     font-size: 18px;
-    /* width: 15%; */
 }
 .title_of_Footer{
     font-size: 22px;
