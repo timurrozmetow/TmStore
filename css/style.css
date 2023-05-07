@@ -30,13 +30,15 @@
 .logo{
     display: flex;
     justify-content: space-between;
-    width: 17%;
+    /* width: 17%; */
 }
 
 .ulMobile{
     margin:5% 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
     
 }
 .header_items{
@@ -48,11 +50,17 @@
     display: flex;
 }
 ul li a{
-    font-size: 30px;
-    padding-left: 100px;
+    font-size: 20px;
+    /* padding-left: 100px; */
 }
-
-
+.Left_Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.Left_Footer .logo{
+    margin-bottom: 5%;
+}
 /* hamburger */
 
 #nav-icon2{
@@ -84,6 +92,7 @@ ul li a{
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+
 }
 
 #nav-icon2 span:nth-child(even) {
@@ -365,7 +374,8 @@ main{
     padding: 6% 0;
 }
 .GridText{
-    font-size: 28px;
+    font-size: 22px;
+    margin-top: 5%;
 }
 .GridImg{
     width: 80%;
@@ -581,10 +591,16 @@ outline: 0;
     font-family: Inter;
  }
 
+ .uberi{display: none;}
 /* adaptive */
 
 @media (max-width:393px){
-    
+    .logo img{
+        width: 35%;
+    }
+    .uberi{
+        display: block;
+    }
     .kill, .c, .hamburgerWhenAc{
         display: none;
     }
@@ -593,13 +609,22 @@ outline: 0;
     }
     
     header ul li a{
-        font-size: 15px;
+        font-size: 22px;
         padding: 0;
         text-align: center;
-        margin: 0 auto;
+        /* margin: 2% 0; */
         font-family: Inter;
+        transition: 0.3s;
 
     }
+    header{
+            transition: 0.3s;
+    }
+    header ul li{
+        transition: 0.3s;
+        margin: 2% 0;
+    }
+
     .main_title{
         font-size: 26px;
     }
@@ -708,9 +733,34 @@ outline: 0;
     footer p{
         margin: 5% 0;
     }
+        /* new add*/
+
+        .main_texts{
+            padding: 0 0 2% 2%;
+        }
+        .SetUsual, .GridSpaceSample{
+            margin-right: 0;
+            width: 75%;
+        }
+        .Set, .Grid {
+            align-items: center;
+        }
+        .Place p{
+            font-size: 14px;
+        }
+        .Gmail .text_middle p{
+            font-size: 18px;
+            margin: 0;
+        }
+        .Gmail .text_middle p:nth-child(2){
+            font-size: 14px;
+            margin: 0;
+        }
 }
 @media (max-width:425px){
-    
+    .uberi{
+        display: block !important;
+    }
     .kill, .c, .hamburgerWhenAc{
         display: none;
     }
@@ -719,12 +769,20 @@ outline: 0;
     }
     
     header ul li a{
-        font-size: 15px;
+        font-size: 22px;
         padding: 0;
         text-align: center;
-        margin: 0 auto;
+        /* margin: 2% 0; */
         font-family: Inter;
+        transition: 0.3s;
 
+    }
+    header{
+            transition: 0.3s;
+    }
+    header ul li{
+        transition: 0.3s;
+        margin: 2% 0;
     }
     .main_title{
         font-size: 26px;
@@ -833,5 +891,28 @@ outline: 0;
     }
     footer p{
         margin: 5% 0;
+    }
+    /* new add*/
+
+    .main_texts{
+        padding: 0 0 2% 2%;
+    }
+    .SetUsual, .GridSpaceSample{
+        margin-right: 0;
+        width: 75%;
+    }
+    .Set, .Grid {
+        align-items: center;
+    }
+    .Place p{
+        font-size: 14px;
+    }
+    .Gmail .text_middle p{
+        font-size: 18px;
+        margin: 0;
+    }
+    .Gmail .text_middle p:nth-child(2){
+        font-size: 14px;
+        margin: 0;
     }
 }
